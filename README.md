@@ -1,2 +1,2 @@
 # nnode_int
-Solving parametric initial valur problems with neural networks
+Solving parametric initial value problems with neural networks
