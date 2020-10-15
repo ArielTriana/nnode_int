@@ -1,5 +1,5 @@
 from autograd.numpy.random import normal, uniform
-from autograd.numpy import  exp
+from autograd.numpy import exp
 from autograd import grad
 
 class NNode_int():
@@ -26,7 +26,7 @@ class NNode_int():
     def dSGMdx (self, t):
         #to normalizate the data
         x = 2 * t/(self.x_max - self.x_min) - 1
-        S=self.SGM(t)
+        S=self.SGM(x)
         return S*(1-S)*(2/(self.x_max - self.x_min))
 
     # predictor function
